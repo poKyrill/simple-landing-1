@@ -1,0 +1,56 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Poppins", system-ui;
+	padding: 16px 12px;
+	max-width: 1512px;
+	margin: 0px auto;
+}
+
+.logo {
+	width: 183px;
+	align-items: center;
+	cursor: pointer;
+	&__link {
+		font-weight: 700;
+		font-size: 27px;
+		color: #000;
+		line-height: 120%;
+	}
+}
+
+.main {
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 467px;
+		a {
+			color: #000;
+			font-weight: 500;
+			font-size: 21px;
+			line-height: 120%;
+		}
+	}
+
+	&__link {
+		border: 1px solid #2203e4;
+		padding: 11px 15px;
+		cursor: pointer;
+		margin-left: 32px;
+	}
+}
+.link {
+	&__purchase {
+		color: #2203e4;
+		font-weight: 500;
+		font-size: 21px;
+	}
+}
