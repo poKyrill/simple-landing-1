@@ -1,0 +1,65 @@
+.opinions {
+	background-color: #FFBE0B;
+
+	&__container {
+		text-align: center;
+		padding-top: 67px;
+		margin-bottom: 42px;
+	}
+
+	&__title {
+		font-family: "Poppins", system-ui;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 120%;
+		margin-bottom: 12px;
+	}
+
+	&__textd {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
+	}
+
+	&__name {
+	}
+}
+.fitback {
+
+	&__container {
+		display: flex;
+	}
+
+	&__text {
+	}
+}
+.opinion {
+
+	&__position {
+	}
+
+	&__active {
+	}
+}
+.fit {
+
+	&__cloud {
+	}
+}
+.cloud {
+
+	&__img {
+	}
+}
+.name {
+
+	&__rate {
+	}
+}
+.rate {
+
+	&__stars {
+	}
+}
