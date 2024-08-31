@@ -312,40 +312,70 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 6px;
 }
 
-.people__list {
-  padding-top: 7px;
-}
-.people__item {
-  margin-bottom: 8px;
-}
-
-.item__name {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 120%;
-  color: #dea405;
-}
-.item__position {
+.ulslider {
+  overflow: hidden;
+  position: relative;
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
   color: #dea405;
 }
-.item__activen {
-  color: #000;
-  font-family: "Poppins", system-ui;
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 120%;
+
+.people__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  height: 161px;
+  gap: 9px;
 }
-.item__activep {
-  color: #575757;
+
+.people__item {
+  height: 33.33%;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.people__item a {
+  color: #dea405;
+}
+.people__item h3 {
   font-family: "Poppins", system-ui;
   font-weight: 500;
   font-size: 21px;
   line-height: 120%;
+}
+
+.people__item.active {
+  margin-left: 1px;
+}
+
+.people__item.active h3 {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 120%;
+  color: #000;
+}
+
+.people__item.active p {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  color: #575757;
 }
 
 .for__who {
@@ -563,32 +593,36 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 32px;
-  scroll-behavior: smooth;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; /* Плавная анимация */
 }
 
 /* Слайды */
 .slide {
+  min-width: 33.33%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 12px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   width: 702px;
   height: 230px;
   padding: 0 16px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
           box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
   background-color: #f3f3f3;
   opacity: 0.4;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .slide.active {
