@@ -38,6 +38,10 @@
 			font-size: 21px;
 			line-height: 120%;
 		}
+		a:hover {
+			color: #575757;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 
 	&__link {
@@ -45,6 +49,17 @@
 		padding: 11px 15px;
 		cursor: pointer;
 		margin-left: 32px;
+	}
+
+	&__link:hover {
+		background-color: #2203e4;
+		transition: all 0.1s ease-in-out;
+	}
+
+	&__link:hover a {
+		background-color: #2203e4;
+		transition: all 0.1s ease-in-out;
+		color: #fff;
 	}
 }
 .link {

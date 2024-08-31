@@ -1,0 +1,149 @@
+.start .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 952px;
+	height: 746px;
+}
+
+.start {
+	padding-bottom: 104px;
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+		font-family: "Poppins", system-ui;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 120%;
+		margin-bottom: 12px;
+	}
+
+	&__text {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
+	}
+
+	&__img {
+		width: 327px;
+		height: 321px;
+	}
+
+	&__btn {
+		width: 124px;
+		height: 39px;
+		background-color: #0062ff;
+		color: #fff;
+		padding: 10px 16px;
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+	}
+	&__btn:hover {
+		width: 124px;
+		border: 1px solid #575757;
+		background: #fff;
+		color: #575757;
+		transition: all 0.3s ease-in-out;
+	}
+}
+.my-product-title {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		max-width: 950px;
+	}
+
+	&__img {
+		margin-right: 13px;
+	}
+
+	&__content {
+		height: 175px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
+	}
+}
+.rate-strip {
+	display: flex;
+	align-items: center;
+}
+.rate-strip img {
+	width: 158px;
+	height: 26px;
+	margin-right: 17px;
+}
+.rate-span {
+	font-family: "Poppins", system-ui;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+}
+.start-title {
+	font-family: "Poppins", system-ui;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+	color: #2203e4;
+}
+.form {
+	&__content {
+		text-align: center;
+		width: 508px;
+		height: 184px;
+		margin: 0px auto;
+	}
+}
+.email {
+	&__title {
+		font-family: "Poppins", system-ui;
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 120%;
+		margin-bottom: 28px;
+	}
+
+	&__container {
+	}
+}
+.email-input {
+	width: 100%;
+	height: 70px;
+	border-radius: 12px;
+	background-color: rgba(58, 134, 255, 0.2);
+	margin-bottom: 14px;
+	padding: 25px 0px 26px 24px;
+	font-family: "Poppins", system-ui;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #2203e4;
+}
+.submit-button {
+	width: 100%;
+	height: 39px;
+	background-color: #0062ff;
+	color: #fff;
+	font-family: "Poppins", system-ui;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+}
+::placeholder {
+	color: #2203e4;
+}

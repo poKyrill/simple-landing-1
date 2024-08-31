@@ -1,10 +1,12 @@
 .opinions {
-	background-color: #FFBE0B;
+	background-color: #ffbe0b;
+	padding-top: 67px;
+	padding-bottom: 53px;
+	margin-bottom: 90px;
 
 	&__container {
 		text-align: center;
-		padding-top: 67px;
-		margin-bottom: 42px;
+		margin-bottom: 30px;
 	}
 
 	&__title {
@@ -24,42 +26,93 @@
 	}
 
 	&__name {
+		font-family: "Poppins", system-ui;
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 120%;
 	}
 }
-.fitback {
 
+/* Родительский блок слайдера */
+.slider {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 254px;
+}
+
+/* Внутренний контейнер, содержащий слайды */
+.slider-wrapper {
+	display: flex;
+	gap: 32px;
+	scroll-behavior: smooth;
+}
+
+/* Слайды */
+.slide {
+	// min-width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	transition: background-color 0.3s ease;
+	width: 702px;
+	height: 230px;
+	padding: 0 16px;
+	align-items: center;
+	box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.12);
+	background-color: #f3f3f3;
+	opacity: 0.4;
+}
+
+.slide.active {
+	background-color: #f3f3f3;
+	opacity: 1; /* Для наглядности */
+}
+
+.fitback {
 	&__container {
-		display: flex;
+		padding-left: 12px;
 	}
 
 	&__text {
-	}
-}
-.opinion {
-
-	&__position {
-	}
-
-	&__active {
-	}
-}
-.fit {
-
-	&__cloud {
-	}
-}
-.cloud {
-
-	&__img {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
 	}
 }
 .name {
-
 	&__rate {
+		display: flex;
+		margin-bottom: 16px;
+	}
+
+	&__rate-text {
+		a {
+			color: #000;
+		}
 	}
 }
-.rate {
 
+.opinion {
+	&__position {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 120%;
+	}
+}
+
+.rate {
 	&__stars {
+		width: 158px;
+		height: 26px;
+		margin-left: 7px;
 	}
 }

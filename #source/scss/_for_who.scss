@@ -52,6 +52,12 @@
 		display: block;
 		margin: 0px auto;
 	}
+	&__btn:hover {
+		border: 1px solid #fff;
+		background-color: #2203E4;
+		color: #fff;
+		transition: all 0.3s ease-in-out;
+	}
 }
 .title {
 	&__text {
