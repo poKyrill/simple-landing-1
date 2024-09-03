@@ -1,0 +1,68 @@
+.demo {
+
+	&__container {
+		text-align: center;
+		margin-bottom: 44px;
+	}
+	
+	&__title {
+		font-family: "Poppins", system-ui;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 120%;
+		margin-bottom: 12px;
+	}
+	
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		width: 1102px;
+		margin: 0px auto 130px;
+	}
+
+	&__llist {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* Равномерное распределение по вертикали */
+		height: 296px; /* Высота родительского блока */
+		padding: 11px 0px;
+		padding-left: 11px;
+	}
+}
+.title {
+
+	&__textd {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
+	}
+}
+.item {
+
+	&__title {
+		font-family: "Poppins", system-ui;
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 120%;
+		margin-bottom: 12px;
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		a:hover {
+			color: #575757;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	&__text {
+		font-family: "Poppins", system-ui;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #575757;
+	}
+}

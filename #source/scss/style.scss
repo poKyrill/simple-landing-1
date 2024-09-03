@@ -1,2 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 @import "_nullstyle";
 @import "_header";
+
+.container {
+	max-width: 1260px;
+}
+
+@import "_hero";
+@import "_authors";
+@import "_for_who";
+@import "_demo";
+@import "_opinions";
+@import "_start";
